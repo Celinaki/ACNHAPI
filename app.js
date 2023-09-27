@@ -34,7 +34,6 @@ const miscArrEndpoint = require("./endpoints/miscArr");
 const wallmountedArrEndpoint = require("./endpoints/wallmountedArr");
 
 // const httpServer = http.createServer(app);
-const httpServer = http.createServer(app);
 
 //Allow CORS
 app.use(cors());
@@ -42,9 +41,9 @@ app.use(cors());
 //Send data as gzip
 app.use(compression());
 
-httpServer.listen(80, () => {
-  console.log(`Server HTTP running on port 80`);
-});
+// httpServer.listen(80, () => {
+//   console.log(`Server HTTP running on port 80`);
+// });
 
 /* Replace with your own for HTTPS
 const privateKey = fs.readFileSync('/etc/letsencrypt/live/acnhapi.com/privkey.pem', 'utf8');
