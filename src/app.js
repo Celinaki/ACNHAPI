@@ -59,7 +59,7 @@ httpsServer.listen(443, () => {
 app.use(express.static("html", { maxAge: 300000 }));
 
 app.get("/doc", (req, res) => {
-  res.sendFile(__dirname + "/html/doc.html");
+  res.sendFile(__dirname + "../html/doc.html");
 });
 
 app.get("/acnhapilogs/ip", (req, res) => {
